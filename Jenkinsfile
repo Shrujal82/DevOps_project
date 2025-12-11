@@ -1,5 +1,10 @@
 pipeline {
     agent { label 'slave-agent' }
+	
+	tools {
+        jdk 'JAVA21'
+        maven 'M3'
+    }
 
     stages {
 
@@ -11,7 +16,7 @@ pipeline {
 
         stage('Build Spring Boot App') {
             steps {
-                sh './mvnw clean package -DskipTests'
+                sh 'mvn clean install'
             }
         }
     }
