@@ -19,7 +19,7 @@ public class DevOpsProjectApplication {
 	}
 	
 	@GetMapping("/about")
-	public String home() {
+	public String about() {
 		return "<h1>This is about page</h1>";
 	}
 }
