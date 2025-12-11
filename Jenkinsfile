@@ -1,6 +1,8 @@
 pipeline {
     agent { label 'slave-agent' }
-	
+	triggers {
+        githubPush()
+    }
 	tools {
         jdk 'JAVA21'
         maven 'M3'
