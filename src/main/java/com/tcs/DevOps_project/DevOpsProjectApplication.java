@@ -22,4 +22,9 @@ public class DevOpsProjectApplication {
 	public String about() {
 		return "<h1>This is about page</h1>";
 	}
+	
+	@GetMapping("/contact")
+	public String contact() {
+		return "<h1>This is contact page</h1>";
+	}
 }
