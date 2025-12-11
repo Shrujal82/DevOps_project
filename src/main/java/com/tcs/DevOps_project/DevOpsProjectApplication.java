@@ -17,4 +17,9 @@ public class DevOpsProjectApplication {
 	public String home() {
 		return "<h1>Welcom to demo project</h1>";
 	}
+	
+	@GetMapping("/about")
+	public String home() {
+		return "<h1>This is about page</h1>";
+	}
 }
