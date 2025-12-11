@@ -1,11 +1,6 @@
 pipeline {
     agent slave-agent
 
-    environment {
-        DOCKER_CREDENTIALS = credentials('dockerhub-cred')
-        IMAGE_NAME = "your-dockerhub-username/springboot-app"
-    }
-
     stages {
 
         stage('Checkout') {
